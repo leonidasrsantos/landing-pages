@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root{
     --color-primary:#bf0404ff;
+    --color-spotify:#1db954;
     --color-text1:white;
     --color-text2:black;
 }
@@ -11,14 +12,13 @@
     box-sizing: border-box;
     list-style: none;
     border-collapse: collapse;
+    
 }
-
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 /*Configurações Gerais de elementos genericos*/
 body{
     font-size: 1.6rem;
@@ -36,10 +36,6 @@ h2{
 }
 h3{
     font-size: 3rem;
-}
-
-img{
-    margin-bottom: 3rem;
 }
 
 .menu-hamburguer{
@@ -105,7 +101,7 @@ img{
 /*Sessões*/
 section.bg-beck{
     color: white;
-    background: black url('../img/bg-beck-blur.jpg') no-repeat center center;
+    background: black url('../img/bg-beck-blur.jpg') no-repeat center center fixed;
     background-size: cover;
     min-height: 100vh;
     
@@ -128,7 +124,7 @@ section.bg-white{
     margin-top: 4rem;
 }
 .max-width{
-    max-width: 900px;
+    max-width: 90rem;
 }
 .intro-beck{
     background-color: rgba(0, 0, 0, 0.57);
@@ -145,18 +141,149 @@ section.bg-white{
     width: 4rem;
 }
 
+/*Sessão de produtos*/
 .sell-products{
-    justify-content: flex-start;
-    max-width: 100%;
-    background-color: red;
+    padding-bottom: 10rem;
+    justify-content: flex-start; 
 }
 
-.title-sell-products {
-    margin: 3rem;
+.div-itens-shop{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.title-sell-products,.div-itens-shop {
+    margin-top: 2rem;
     text-align: center;
 }
-.div-itens-shop , div.div-itens-shop h3{
-    margin-bottom: 5rem;
-    text-align: center;
+div.div-itens-shop h3{
     font-variant: small-caps;
+}
+.box-scroll-x{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    width: 95%;
+    height: 36rem;
+    overflow: hidden;
+    overflow-x: auto ;
+    border: 0.1rem solid rgba(0, 0, 0, 0.21);
+    border-radius: 0.5rem;
+}
+.box-scroll-x ul{
+    padding: 0.5rem;
+}
+.box-scroll-x li{
+    display: inline-block;
+    height: 100%;
+    background-color: white;
+    border: 0.1rem solid var(--color-primary);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.615);
+}
+.box-scroll-x img{
+    width: 25rem;
+    border: 0.1rem solid var(--color-primary);
+}
+.name-shirt{
+    font-size: 2rem;
+}
+.price-shirt{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:var(--color-primary);
+}
+
+/*Sessão de Lançamentos*/
+.lancamentos-yt{
+    justify-content: flex-start;
+    text-align: center;
+    padding-top: 8rem;
+}
+.lancamentos-yt h2{
+    margin: 0 0.5rem;
+}
+.video-responsivo{
+    width: 90%;
+    max-width: 800px;
+}
+.video-responsivo iframe{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+.spotify{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#181818;
+    width: 30rem;
+    height: 10rem;
+    border: 0.1rem solid var(--color-spotify);
+    border-radius: 1rem;
+}
+.photo-spotify{
+    margin-left: 1rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    background: url("../img/ft-perfil-spotify.jpg") no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+.letter-sy{
+    display: flex;
+    color: #1db954;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+    border-left: 0.1rem solid var(--color-spotify);
+    height: 100%;
+    width: 2rem;
+    margin-right: 4rem;
+}
+.two-colum{
+    margin-right: 5rem;
+}
+.two-colum h3{
+    padding-bottom: 1rem;
+}
+.two-colum img{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.link-spotify a{
+    display: block;
+    font-weight: bold;
+    width: 100%;
+    background: var(--color-spotify);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.link-spotify a::after{
+    content:'';
+    background: white;
+    float: left;
+    margin-top: 0.2rem;
+    width: 1%;
+    height: 0.2rem;
+    animation: link-spotify 6s ease-in-out infinite;
+}
+
+@keyframes link-spotify{
+    25%{
+        width: 100%;
+    }
+    50%{
+        float: right;
+        width: 1%;
+    }
+    75%{
+        width: 100%;
+    }
 }
