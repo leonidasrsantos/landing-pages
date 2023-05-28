@@ -401,10 +401,10 @@ footer button:active{
     #listaNav{
         display: block;
     }
-    #redes-sociais img{
+    .img-grayscale img{
         filter: grayscale(1);
     }
-    #redes-sociais img:hover{
+    .img-grayscale img:hover{
         filter: grayscale(0);
         transform: scale(1.1);
     }
