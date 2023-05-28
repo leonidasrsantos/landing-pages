@@ -97,6 +97,9 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--primary-color);
 }
+#listaNav{
+    display: none;
+}
 
 /*Sessões*/
 section.bg-beck{
@@ -174,6 +177,18 @@ div.div-itens-shop h3{
     border: 0.1rem solid rgba(0, 0, 0, 0.21);
     border-radius: 0.5rem;
 }
+.box-scroll-x::-webkit-scrollbar{
+    height: 2rem;
+}
+.box-scroll-x::-webkit-slider-thumb{
+    background: transparent;
+}
+.box-scroll-x::-webkit-scrollbar-thumb{
+    background:var(--color-primary);    
+    border-radius: 2rem;
+    border: 3px solid rgb(161, 5, 5);
+    
+}
 .box-scroll-x ul{
     padding: 0.5rem;
 }
@@ -199,6 +214,7 @@ div.div-itens-shop h3{
 
 /*Sessão de Lançamentos*/
 .lancamentos-yt{
+    background:linear-gradient(to bottom,var(--color-primary),rgb(79, 3, 3),black);
     justify-content: flex-start;
     text-align: center;
     padding-top: 8rem;
@@ -220,7 +236,7 @@ div.div-itens-shop h3{
     justify-content: space-between;
     align-items: center;
     background:#181818;
-    width: 30rem;
+    width: 29rem;
     height: 10rem;
     border: 0.1rem solid var(--color-spotify);
     border-radius: 1rem;
@@ -242,7 +258,7 @@ div.div-itens-shop h3{
     border-left: 0.1rem solid var(--color-spotify);
     height: 100%;
     width: 2rem;
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 .two-colum{
     margin-right: 5rem;
@@ -265,6 +281,13 @@ div.div-itens-shop h3{
     padding: 1rem;
     border-radius: 1rem;
 }
+.link-spotify a:hover{
+    background: #0a7b32;
+    border: 0.1rem solid white;
+    padding: 0.9rem;
+    box-shadow: 0rem 0rem 0.5rem rgba(255, 255, 255, 0.438);
+    
+}
 .link-spotify a::after{
     content:'';
     background: white;
@@ -285,5 +308,97 @@ div.div-itens-shop h3{
     }
     75%{
         width: 100%;
+    }
+}
+
+/*Rodapé*/
+footer{
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+}
+footer h3{
+    font-size: 2rem;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    
+}
+footer button{
+    font-weight: bold;
+    color: white;
+    background-color: var(--color-primary);
+    height: 4rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 6px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+footer button:hover{
+    background: rgb(131, 0, 0);
+    box-shadow: 0px 0px 3px black inset;
+}
+footer button:active{
+    background: rgb(91, 0, 0);
+    border: 0.1rem solid white;
+}
+
+
+/*Midia query*/
+
+@media (min-width:660px) {
+    .menu-hamburguer{
+        display: none;
+    }
+    .menu-container{
+        padding: 0.5rem;
+    }
+    .menu-content{
+        position: relative;
+        background: none;
+    }
+    .menu-container h1{
+        width: initial;
+    }
+    .menu-content ul{
+        height: initial;
+        width: initial;
+        display: inline;
+        background: none;
+    
+    }
+    .menu-content li{
+        display: inline-block;
+        border-radius: 1rem;
+    }
+    .menu-content li a{
+        background:var(--color-primary);
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        border: 0.1rem solid white;
+    }
+    .menu-content li a:hover{
+        background-color: rgb(91, 0, 0);
+    }
+    #listaNav{
+        display: block;
+    }
+    #redes-sociais img{
+        filter: grayscale(1);
+    }
+    #redes-sociais img:hover{
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
+    .lancamentos-yt{
+        gap: 4rem;
+    }
+    footer{
+        padding-top: 5rem;
     }
 }

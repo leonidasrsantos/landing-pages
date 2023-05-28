@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beck</title>
 </head>
-<body>
+<body onresize="widthSize()">
     <header class="menu-container">
         <h1><a href="#inicio">Be<span style="color: var(--color-primary);">ɔ</span>k</a></h1>
             <div class="menu-content">
@@ -16,12 +16,12 @@
                     <div></div>
                     <div></div>
                 </div>
-                <nav id="listaNav" style="display: none;" aria-label="Open/Close Menu">
+                <nav id="listaNav" aria-label="Open/Close Menu">
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#sell-products">Produtos</a></li>
-                        <li><a href="">Youtube</a></li>
-                        <li><a href="">Contato</a></li>
+                        <li><a href="#lancamento">Mídia</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </nav>
             </div>
@@ -73,7 +73,7 @@
             
     </section>
     
-    <section class="section lancamentos-yt">
+    <section id="lancamento" class="section lancamentos-yt">
         <h2>Ultimo Lançamento</h2>
         <div class="video-responsivo">
             <iframe src="https://www.youtube.com/embed/rK6CxofMtms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -97,6 +97,16 @@
             </div>
         </div>
     </section>
+    <footer id="contato">
+        <div>
+            <h3>Contato:</h3>
+            <div>
+                <p>Email: xxxxxxxxxxxx@gmail.com</p>
+                <p>Tel: 0000-0000 | 00000-0000</p>
+            </div>
+            <button type="button">Enviar e-mail</button>
+        </div>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
