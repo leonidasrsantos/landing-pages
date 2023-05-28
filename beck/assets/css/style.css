@@ -178,7 +178,7 @@ div.div-itens-shop h3{
     border-radius: 0.5rem;
 }
 .box-scroll-x::-webkit-scrollbar{
-    height: 2rem;
+    height: 1.5rem;
 }
 .box-scroll-x::-webkit-slider-thumb{
     background: transparent;
@@ -186,7 +186,7 @@ div.div-itens-shop h3{
 .box-scroll-x::-webkit-scrollbar-thumb{
     background:var(--color-primary);    
     border-radius: 2rem;
-    border: 3px solid rgb(161, 5, 5);
+    border: 0.3rem solid rgb(161, 5, 5);
     
 }
 .box-scroll-x ul{
@@ -201,7 +201,7 @@ div.div-itens-shop h3{
 }
 .box-scroll-x img{
     width: 25rem;
-    border: 0.1rem solid var(--color-primary);
+    border-bottom: 0.1rem solid var(--color-primary);
 }
 .name-shirt{
     font-size: 2rem;
