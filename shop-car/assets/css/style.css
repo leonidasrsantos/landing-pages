@@ -1,0 +1,174 @@
+@charset "UTF-8";
+
+:root{
+    --color-primary: #7a34dc;
+    --color-secundary:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background: rgb(185, 185, 185);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #101010;
+    
+}
+
+.list-sections{
+    gap: 3rem;
+    background-color: #101010;
+    border-radius: 0rem 0rem 1rem 1rem;
+    border: 0.1rem solid var(--color-primary);
+   
+}
+
+.list-sections li a{
+    position: relative;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+
+}
+
+.list-sections li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0.3rem;
+    background-color: var(--color-primary);
+    left: 50%;
+    width: 0;
+    height: 0.1rem;
+    transition: 300ms ease-in-out;
+}
+
+.list-sections li a:hover::after{
+    width: 80%;
+    left: 10%;
+    box-shadow: 0 0 0.5rem white;
+}
+
+.card-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5rem;
+    gap: 3rem;
+}
+
+.card-intro li{
+    width: 20rem;
+    height: 30rem;
+    text-align: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.321);
+}
+
+.card-intro img{
+    width: 96px;
+}
+
+.card-intro p{
+    border-top: 0.1rem solid red;
+    margin-top: 2rem;
+}
+
+.sell-car{
+    background: white;
+    align-items: start;
+}
+
+.classificados{
+    text-align: center;
+    padding: 0 3rem 3rem 3rem;
+}
+
+.classificados aside{
+    background: var(--color-primary);
+    color: white;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.classificados ul{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.classificados li{
+    border-radius: 1rem;
+    border: 0.1rem solid gray;
+    padding: 1rem;
+    max-width: 30rem;
+    max-height: 36rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.274);
+}
+
+.classificados ul img{
+    width: 25rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.servicos{
+    flex-direction: column;
+}
+
+.marcas{
+    padding: 4rem;
+    text-align: center;
+}
+
+.marcas h2{
+    font-size: 3rem;
+    font-variant: small-caps;
+}
+
+.marcas ul{
+    padding: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.articles-servicos{
+    padding: 4rem;
+    justify-content: space-evenly;
+    align-items: start;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.article-left, .article-right{
+    text-align: center;
+    border: 1px solid black;
+    max-width: 50%;
+}
