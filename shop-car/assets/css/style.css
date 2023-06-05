@@ -14,6 +14,7 @@
 
 html{
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -26,20 +27,35 @@ body{
     align-items: center;
     justify-content: center;
 }
+/*Header*/
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #101010;
-    
+.logo-nav-bar{
+    justify-content: space-between;
+    background: white;
+    border: 0.3rem solid white;
+    border-right: none;
 }
 
+.logo-header{
+    color: #43325C;
+    align-items: center;
+}
+
+.logo-header > img{
+    position: relative;
+    top: -1rem;
+    width: 100px;
+}
+
+.nav-sections{
+    background: var(--color-primary);
+    border-radius: 3rem 0 0 3rem;
+    padding-left: 3rem;
+    box-shadow: 0.3rem 0rem 0.3rem rgba(0, 0, 0, 0.225) inset;
+}
 .list-sections{
     gap: 3rem;
-    background-color: #101010;
     border-radius: 0rem 0rem 1rem 1rem;
-    border: 0.1rem solid var(--color-primary);
    
 }
 
@@ -50,27 +66,29 @@ header{
     color: white;
     font-size: 2rem;
     font-weight: bold;
-    padding: 1rem;
-
+    padding: 1.5rem;
 }
 
 .list-sections li a::after{
     content: '';
     position: absolute;
-    bottom: 0.3rem;
-    background-color: var(--color-primary);
+    bottom: 0.6rem;
+    background-color: white;
     left: 50%;
     width: 0;
-    height: 0.1rem;
+    height: 0.2rem;
     transition: 300ms ease-in-out;
 }
 
 .list-sections li a:hover::after{
     width: 80%;
     left: 10%;
-    box-shadow: 0 0 0.5rem white;
+    box-shadow: 0 0 0.1rem white;
 }
 
+.introducao{
+    background: url("../img/bg-line-art.svg") fixed;
+}
 .card-intro{
     display: flex;
     align-items: center;
@@ -99,21 +117,23 @@ header{
     margin-top: 2rem;
 }
 
+/*Sessão de Veículos*/
+
 .sell-car{
     background: white;
-    align-items: start;
+    flex-direction: column;
+}
+
+.sell-car h2{
+    background: var(--color-primary);
+    color: white;
+    padding: 2rem;
+    border-radius: 0 0 1rem 1rem;
 }
 
 .classificados{
     text-align: center;
     padding: 0 3rem 3rem 3rem;
-}
-
-.classificados aside{
-    background: var(--color-primary);
-    color: white;
-    padding: 2rem;
-    border-radius: 0 0 1rem 1rem;
 }
 
 .classificados ul{
@@ -139,31 +159,50 @@ header{
     border-radius: 1rem;
 }
 
+/*-----------------------Sessão de Manutenções--------------------------*/
+
 .servicos{
     flex-direction: column;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    background: url(../img/bg-gradient.svg);
+}
+
+.servicos > h2{
+    color: white;
+    font-size: 2.5em;
+    padding: 1rem;
+    background-color: var(--color-primary);
+    border-radius: 0rem 0rem 3rem 3rem;
 }
 
 .marcas{
-    padding: 4rem;
     text-align: center;
 }
 
 .marcas h2{
-    font-size: 3rem;
+    font-size: 2.4rem;
     font-variant: small-caps;
+    background-color: #DB724B;
+    width: 30rem;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 0 0;
+    color: white;
 }
 
 .marcas ul{
+    background: white;
     padding: 2rem;
     gap: 2rem;
     flex-wrap: wrap;
+    border-radius: 1rem;
 }
 
 .articles-servicos{
-    padding: 4rem;
+    gap: 2rem;
+    padding: 0 4rem;
     justify-content: space-evenly;
     align-items: start;
-    min-height: 100vh;
     width: 100%;
 }
 
@@ -171,4 +210,98 @@ header{
     text-align: center;
     border: 1px solid black;
     max-width: 50%;
+    background: white;
+    border-radius: 1rem;
+}
+
+.container-servicos{
+    display: flex;
+    align-items: center;
+    max-width: 60rem;
+    padding: 2rem 0.5rem;
+    border-top: 0.1rem solid var(--color-primary);
+}
+
+/*SESSÃO DE ENDEREÇO/MAPA*/
+
+.map{
+    padding: 5rem;
+    background:linear-gradient(to bottom,var(--color-primary),#181818);
+    gap: 7rem;
+    flex-wrap: wrap;
+    align-items: last baseline;
+}
+
+.google-maps{
+    text-align: center;
+    position: relative;
+    border: 0.3rem solid var(--color-secundary);
+    max-width: 45rem;
+    min-width: 30rem;
+}
+
+.google-maps iframe{
+    max-width: 100%;
+    min-width: 30rem;
+    height: auto;
+    aspect-ratio: 4/3;
+}
+
+.google-maps h3{
+    position: relative;
+    background: var(--color-secundary);
+    color: white;
+    border-radius: 0 0 1rem 1rem;
+    padding: 0.5rem;
+    margin-bottom: -3.1rem;
+    width: 50%;
+    left: 50%;
+}
+
+.address{
+    position: relative;}
+
+.icon-mapa{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: url(../img/map-marker-100.png);
+    top:-2rem;
+    right: -3rem;
+}
+.title-mapa{
+    position: relative;
+    text-align: center;
+    color: white;
+    background: #DB724B;
+    width: 15rem;
+    padding: 1rem;
+    left: 50%;
+    border-radius: 1rem 1rem 0 0;
+    bottom: -0.1rem;
+    transform: translate(-50%);
+}
+.address ul{
+    background: white;
+    border: 0.1rem solid black;
+    line-height: 2.4rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.address li{
+    padding: 0.5rem;
+}
+
+.address li:nth-child(2n){
+    background: gainsboro;
+}
+
+.address li div{
+    position: absolute;
+    left: -5rem;
+    background: url("../img/google-web-search.svg") no-repeat;
+    background-size: contain;
+    padding: 3.1rem;
+    cursor: pointer;
 }
