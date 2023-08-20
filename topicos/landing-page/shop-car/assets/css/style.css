@@ -3,6 +3,7 @@
 :root{
     --color-primary: #7a34dc;
     --color-secundary:black;
+    --color-analoga1:#DB724B;
 }
 
 *{
@@ -221,12 +222,17 @@ body{
     padding: 2rem 0.5rem;
     border-top: 0.1rem solid var(--color-primary);
 }
+.container-servicos img{
+    width: 6.4rem;
+    height: 6.4rem;
+    margin-right: 1rem;
+}
 
 /*SESSÃO DE ENDEREÇO/MAPA*/
 
 .map{
-    padding: 5rem;
-    background:linear-gradient(to bottom,var(--color-primary),#181818);
+    padding: 5rem 5rem 20rem 5rem;
+    background:linear-gradient(to bottom,var(--color-primary),black);
     gap: 7rem;
     flex-wrap: wrap;
     align-items: last baseline;
@@ -235,7 +241,8 @@ body{
 .google-maps{
     text-align: center;
     position: relative;
-    border: 0.3rem solid var(--color-secundary);
+    overflow: hidden;
+    border-radius: 2rem;
     max-width: 45rem;
     min-width: 30rem;
 }
@@ -243,15 +250,16 @@ body{
 .google-maps iframe{
     max-width: 100%;
     min-width: 30rem;
-    height: auto;
     aspect-ratio: 4/3;
+    border: 0.3rem solid var(--color-secundary);
+    border-radius: 2rem;
 }
 
 .google-maps h3{
     position: relative;
     background: var(--color-secundary);
     color: white;
-    border-radius: 0 0 1rem 1rem;
+    border-radius: 0 0 0 0.9rem;
     padding: 0.5rem;
     margin-bottom: -3.1rem;
     width: 50%;
@@ -304,4 +312,65 @@ body{
     background-size: contain;
     padding: 3.1rem;
     cursor: pointer;
+}
+
+/*FOOTER*/
+
+.rodape{
+    border-top: 0.2rem solid #DB724B;
+    background:black;
+    color: white;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.rodape-content{
+    gap: 2rem;
+    align-items: self-start ;
+    
+}
+.rodape-itens{
+    width: 33.3%;
+    padding: 2rem;
+}
+
+.intro-rodape{
+    
+}
+
+.logotipo-rodape{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.parceiros , .contato{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    
+
+}
+
+.parceiros h3 , .contato h3{
+    font-size: 2.5rem;
+    color: var(--color-analoga1);
+    padding-bottom: 3rem;
+}
+
+.icon-email{
+    position: relative;
+    top: 1.3rem;
+}
+
+.icon-phone{
+    position: relative;
+    top: 3rem;
+}
+
+.fone{
+    color: red;
+    margin-top: 0.4rem;
+    margin-left: 5.3rem;
 }

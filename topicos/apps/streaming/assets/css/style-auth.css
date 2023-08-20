@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+:root{
+    --color-primary: #FF8100;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    font-size: 1.6rem;
+    background-image: linear-gradient(120deg,#805326,var(--color-primary),#CC6600,#805326);
+}
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 3fr;
+}
+.centraliza{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+.window-form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    color: white;
+    
+    height: 100%;
+    
+}
+.window-itens-form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 40rem;
+    min-width: 30rem;
+    padding: 2rem;
+    height: 100%;
+    width: 50rem;
+    background: linear-gradient(120deg,black,#080808,#151515);
+    border-right: 0.1rem solid white;
+    box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.486);
+}
+.logo-text{
+    top: 0;
+    width: 20rem;
+    height: 10rem;
+    background-image: url(../img/logo-bis.png);
+}
+.form-login{
+    gap: 2rem;
+}
+.form-login input{
+    width: 25rem;
+    height: 4rem;
+    font-size: 2rem;
+}
+.form-login button{
+    height: 3rem;
+    width: 15rem;
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+.button-register{
+    display: inline-block;
+    text-decoration: underline;
+    margin: 2rem auto;
+    cursor: pointer;
+}
+
+.second-section{
+    background: url(../img/background-section.jpeg) no-repeat center center;
+    background-size: cover;
+}
+
+
+

@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/*Azul escuro: #003366
+Azul médio: #006699
+Azul claro: #0099CC
+Azul mais claro: #00CCFF*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+html{
+    background-color: #d1d0bc;
+}
+header{
+background-color:#5a7e8c ;
+font-size: 1.2em;
+text-align: center;
+height: 75px;
+color: white;
+}
+output{
+    float: right;
+    margin:  0px 10px;
+    font-size: 1.1em;
+    
+}
+div#botao{
+    margin: 5px auto;
+    width: 200px;
+    text-align: center;
+    background-color: aqua;
+}
+div#botao button{
+    height: 40px;
+    width: 200px;
+    cursor: pointer;
+}
+section#tarefas{
+    margin:20px;
+    margin: auto;
+    max-width: 900px;
+    text-align: center;
+}
+section#tarefas > ul > li{
+    position: relative;
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+    width:250px;
+    height: 250px;
+    border-radius: 6px;
+    padding: 6px;
+}
+section#tarefas li i{
+    position: absolute;
+    left:230px;
+    top: 10px;
+    cursor: pointer;
+}
+section#tarefas ul#option{
+    position: absolute;
+    display: none;
+    background-color: gainsboro;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    left: 50%;
+    top: 30px;
+}
+section#tarefas ul#option li {
+    border:1px solid gray;
+    cursor: pointer;
+}
+section#tarefas ul#option li:hover{
+    color:red;
+}
+
+section#tarefas li h4{color: rgb(85, 85, 85);font-style: italic;}
+section#tarefas li i:hover{color: red;
+}
+section#tarefas li hr{margin-bottom: 10px;}
+section#tarefas li p{text-align: left;}
+
+section#addTarefa{
+    position: absolute;
+    top: 0px;
+    background-color:rgba(0, 0, 0, 0.666) ;
+    width: 100vw;
+    height: 100vh;
+}
+section#addTarefa > div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    color: white;
+    font-size: 1.6em;
+    background-color: #60A2A3;
+    text-align: center;
+    line-height: 1.5em;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 4px black inset;
+}
+section#addTarefa div button{
+    font-weight: bold;
+    font-size: 0.7em;
+    color: white;
+    background-color: #395059;
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+section#addTarefa div button:hover{
+    background-color: #4a6874;
+}

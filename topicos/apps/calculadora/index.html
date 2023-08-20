@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+        <div id="contain">
+            <div id="calculadora">
+                <div id="circle"></div>
+                <h1>Calculadora</h1>
+                <button onclick="on()" value="0">On/Off</button>
+                <div id="tela">
+                    <div id="setnumberAnt"><output id="setnumberAnt2"></output></div>
+                    <div id="display-calc">
+                        <div id="operador"></div>
+                        <div id="setnumber" style="display: inline;"><input type="number" name="txtn" id="txtn"></div>
+                    </div>
+                </div>
+                <div id="teclado">
+                    <div id="operadores">
+            
+                        <button onclick="soma()">+</button>
+                        <button onclick="menos()">-</button>
+                        <button onclick="multiplicar()">x</button>
+                        <button onclick="divisao()">÷</button>
+                        <button onclick="delet()">del</button>
+                    </div>
+                    <div id="numeros">
+                        <button id="number1" value="1" onclick="numero1()">1</button>
+                        <button id="number2" value="2" onclick="numero2()">2</button>
+                        <button id="number3" value="3" onclick="numero3()">3</button>
+                        <button id="number4" value="4" onclick="numero4()">4</button>
+                        <button id="number5" value="5" onclick="numero5()">5</button>
+                        <button id="number6" value="6" onclick="numero6()">6</button>
+                        <button id="number7" value="7" onclick="numero7()">7</button>
+                        <button id="number8" value="8" onclick="numero8()">8</button>
+                        <button id="number9" value="9" onclick="numero9()">9</button>
+                        <button id="diferente" onclick="ponto()">.</button>
+                        <button id="number0" value="0" onclick="numero0()">0</button>
+                        <button id="diferente" onclick="calcular()">=</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

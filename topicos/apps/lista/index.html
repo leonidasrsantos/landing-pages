@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List </title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>My Task</h1>
+            <output id="outData"></output>
+        </header>
+        <div id="botao">
+            <button onclick="addTarefa()">Adicionar nova tarefa</button>
+        </div>
+        <section id="tarefas">
+            <ul>
+                <li>
+                    <ul id="option">
+                        <li>Alterar</li>
+                        <li>Remover</li>
+                    </ul>
+                    <h3>Nome da tarefa</h3>
+                    <i class="material-icons">more_vert</i>
+                    <h4>Dia e horario</h4>
+                    <hr>
+                    <p>descrição</p>
+                    
+                </li>
+                <li>
+                    <ul id="option">
+                        <li>Alterar</li>
+                        <li>Remover</li>
+                    </ul>
+                    <h3>Dever de casa</h3>
+                    <i class="material-icons">more_vert</i>
+                    <h4>Tomorrow, 4:30 pm</h4>
+                    <hr>
+                    <p>descrição</p>
+                    
+                </li>
+                
+            </ul>
+        </section>
+        <section id="addTarefa" style="display: none;">
+            <div>
+                <div>
+                    <p>Título:<input type="text" name="" id="tTitulo"></p>
+                    <p>Data e hora : <input type="datetime-local" name="" id="dataehora"  max="9999-12-31T23:59"></p>
+                    <p>Tarefa:<p></p><textarea name="" id="tarefa" cols="30" rows="10"></textarea>
+                </div>
+                <div><button onclick="novatarefa()"><p>Adicionar</p></button></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

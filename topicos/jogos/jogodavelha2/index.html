@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div class="center">
+        <div id="introducao" style="display: block;">
+            <p>Quem começa?</p>
+            <p><button onclick="escolhaX()">X</button> ou <button onclick="escolhaO()">O</button></p>
+        </div>
+        <div id="jogodavelha" style="display: none;"> 
+            <div id="anunciador"><h2 id="anunciante">Agora é a vez do <span></span> </h2></div>
+            <div id="jogo">
+                <table>
+                    <tr id="linhaCima">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="linhaCentro">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr id="linhaBaixo">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="placar">
+                <table>
+                    <thead>
+                        <tr id="roundP">
+                            <th>Round</th>
+                            
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="bolaP">
+                            <th >O</th>
+                             
+                        </tr>
+                        <tr id="xisP">
+                            <th>X</th>
+                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div id="posJogo" style="display:none;"><button onclick="recomeçar()">Recomeçar</button></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
