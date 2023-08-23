@@ -1,0 +1,73 @@
+
+/*
+@keyframes hidden-itens{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    50%{
+        opacity: 0;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes encolher {
+    to{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+
+@keyframes loading {
+    
+}
+
+@keyframes extender {
+    0%{
+        width: 7rem;
+        height: 7rem;
+        background: url("../img/estrela.png");
+    }
+    25%{
+        background: url("../img/estrela.png");
+        filter: grayscale(0);
+    }
+    50%{
+        background: url("../img/estrela.png");
+        filter: grayscale(1);
+    }
+    75%{
+        background: url("../img/estrela.png");
+        filter: grayscale(0);
+        width: 7rem;
+        height: 7rem; 
+    }
+    95%{
+        width: 7rem;
+        height: 7rem; 
+    }
+    to{
+        height: initial;
+        width: 90rem;
+    }
+}
+
+@keyframes aparecer-itens {
+   0%{
+        opacity: 0;
+        visibility: hidden;
+   }
+   50%{
+        opacity: 0;
+        visibility: visible;
+   }
+   100%{
+        opacity: 1;
+        visibility: visible;
+        transition: 1s;
+   }
+}
