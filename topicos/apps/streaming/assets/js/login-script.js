@@ -6,7 +6,7 @@ function buttonLogin(){
 
     if(usuario.value == "" || senha.value == ""){
         menssagem.style.display = "block"
-        menssagem.textContent = "Preencha as caixas acima"
+        menssagem.textContent = "Preencha as lacunas acima"
     }else if(usuario.value != "usuario@gmail.com" || senha.value != "usuario123" ){
         menssagem.style.display = "block"
         menssagem.textContent = " Usuário ou Senha incorreto!"
@@ -15,3 +15,11 @@ function buttonLogin(){
         menssagem.textContent = ""
     }
 }
+
+
+
+
+
+
+//Adição de Avatar
+
