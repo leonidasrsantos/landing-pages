@@ -4,6 +4,7 @@
 :root{
     --color-primary: #FF8100;
     --dgd-color1-transparent:linear-gradient(45deg,#c4bef3 , #ff77e8 , #00d4ff );
+    --dgd-color1-transparent-hover:linear-gradient(45deg,#8f8ab3 , #ba57a9 , #00a0c1)
 }
 
 *{
@@ -20,6 +21,10 @@ html{
 body{
     background-color: #080808;
     font-size: 1.6rem;
+}
+
+.bg-white{
+    background: white;
 }
 
 input{
@@ -46,6 +51,9 @@ input:focus{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.center-grid{
+    align-self: center;
 }
 .window-itens-form{
     color: white;
@@ -112,7 +120,7 @@ input:focus{
     align-items: start;
 }
 
-.window-elements-register{
+.window-elements-register-pt1{
     color: black;
     background: white;
     border: 0.2rem solid rgb(0, 0, 0);
@@ -120,7 +128,7 @@ input:focus{
     box-shadow: 0rem 1rem 1rem rgba(0, 0, 0, 0.486);
 }
 
-.window-elements-register{
+.window-elements-register-pt1{
     max-width: 90rem;
     overflow: hidden;
 }
@@ -226,10 +234,272 @@ input:focus{
 
 
 
+.plano-assinatura h3{
+    text-align: center;
+    margin: 2rem;
+    color: red;
+    text-decoration: underline;
+}
+.plano-assinatura input[type=radio]{
+    display: none;
+}
+.plano-assinatura th label{
+    display: grid;
+    place-items: center;
+    background-color: #00a0c1;
+    width: 20rem;
+    height: 5rem;
+    cursor: pointer;
+}
+.plano-assinatura input[type=radio]:checked + label{
+    color: red;
+    background: #00d4ff;
+    border: 0.3rem solid rgb(255, 255, 255);
+    outline: 0.1rem solid red;
+}
+
+.plano-assinatura th{
+    padding: 0.2rem;
+}
+
+.plano-assinatura table td{
+    padding: 1rem;
+    text-align: center;
+}
+.plano-assinatura table tr:nth-child(2n){
+    background-color: rgb(254, 215, 215);
+}
+
+.button-register-part1{
+    display: grid;
+    place-items: end;
+}
+.button-register-part1 p{
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 0.1rem 0.1rem black;
+    color: white;
+    background: var(--dgd-color1-transparent);
+    margin: 2rem 0.4rem;
+    width: 20rem;
+    height: 5rem;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.button-register-part1 p:hover{
+    background: var(--dgd-color1-transparent-hover);
+}
+
+.window-elements-register-pt2{
+    
+}
+
+
+.section-card{
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    border-bottom: 0.5rem solid rgb(255, 255, 255);
+}
+
+.card-pay{
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+    place-items: end center;
+    margin-top: 2rem;
+    gap: 0.2rem;
+}
+
+.icon-card-pay{
+    display: grid;
+    color: rgb(191, 191, 191);
+    text-shadow: 0rem 0rem 0.2rem black;
+    font-size: 2rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #ea0303;
+    width: 34rem;
+    height: 18.8rem;
+    border-radius: 1rem;
+    ;
+}
+
+.card-pay-head{
+    display: grid;
+    place-items: center;
+}
+
+.card-pay-head::before{
+    content: 'Mastercard';
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: white;
+}
+
+.card-pay-body{
+    display: grid;
+    place-items: center;
+    font-size: 2.5rem;
+}
+
+.card-pay-footer{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    place-items: start center;
+}
+
+#dataValidade::before{
+    content: "Valid Thru ";
+    font-size: 1rem;
+    color: white;
+    
+}
+.border-card{
+    background-color: red;
+    width: 100%;
+    height: 6.2rem;
+    border-radius: 0 1rem 0 0;
+    border: 0.2rem solid white;   
+}
+
+.border-card:first-child{
+    border-radius: 1rem 0 0 0;
+    border-right: none;
+}
+
+.border-card:last-child{
+    border-left: none;
+}
+
+.section-input-card{
+    background: white;
+    border-top: 0.1rem dashed red;
+    padding: 2rem;
+    text-align: center;
+}
+
+.input-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.input-card input:focus{
+    background-color: rgb(246, 221, 221);
+}
+
+.section-input-card button{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    margin-top: 2rem;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.card-back :first-child{
+    position: relative;
+    top: 1.5rem;
+    background-color: black;
+    width: 100%;
+    height: 5rem;
+}
+.card-back :last-child{
+    display: grid;
+    place-items: center end;
+    padding: 2rem;
+}
+.card-back :last-child::before{
+    content: 'CVC';
+    font-size: 1.2rem;
+    padding: 0.1rem;
+    background-color: #d8f9ff;
+    color: #080808;
+}
 
 
 
+.window-confirm-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.confirm-register-code{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-verification-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--dgd-color1-transparent);
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+}
+.icon-verification-code{
+    background: url("../img/icons-register/icon-verification-code.png") center center;
+    background-size: cover;
+    height: 64px;
+    width: 64px;
+}
+
+
+.body-verification-code{
+    background-color: white;
+    padding: 1rem;
+    line-height: 3rem;
+    color: #bd0202;
+}
+.confirm-input-code{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 3rem;
+    color: black;
+}
+
+.footer-verefication-code{
+    display: grid;
+    place-items: center;
+    position: relative;
+    background-color: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.footer-verefication-code button{
+    width: 12rem;
+    height: 4rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 0.5rem;
+    background:var(--dgd-color1-transparent);
+    cursor: pointer;
+}
+
+.footer-verefication-code button:hover{
+    color: rgb(208, 208, 208);
+    background: var(--dgd-color1-transparent-hover);
+}
 
 
 

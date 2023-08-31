@@ -7,8 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <div class="fundo-estrelado">
-    </div>
+    <div class="fundo-estrelado"></div>
 
     <div class="container body-tela-login" style="display: none;">
                 <div class="window-itens-form encolher-anime">
@@ -17,7 +16,7 @@
                     </div>
                         <div class="window-input-form centraliza hidden-anime">
                             <div class="form-login centraliza">
-                                <div><p>Usuário:</p><input type="email" name="" id="inputUsuario" placeholder="E-mail" autocomplete="email"></div>
+                                <div><p>Usuário:</p><input type="email" id="inputUsuario" placeholder="E-mail" autocomplete="email"></div>
                                 <div><p>Senha:</p><input type="password" id="inputSenha" placeholder="Senha"></div>
                                 <div><button onclick="buttonLogin()">Entrar</button></div>
                             </div>
@@ -28,8 +27,9 @@
                 </div>
     </div>
 
-    <div class="container body-tela-registro">
-        <div class="window-elements-register extender-anime" >
+    <div class="container body-tela-register">
+
+        <div class="window-elements-register-pt1 extender-anime" style="display: none;" >
             <div class="section-register aparecer-anime">
                 <div class="titles-register">
                     <h2>Binary Star</h2>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="window-register-part1">
                     <div>
-                        <form action="">
+                        <form>
                             <div class="dados-basicos">
                                 <div>
                                     <h3>Escolha um avatar</h3>
@@ -55,25 +55,25 @@
                                         <li><img src="assets/img/photo-perfil/004-sukuna-avatar.jpg" alt="Personagem sukuna"></li>
                                         <li><img src="assets/img/photo-perfil/005-jon-avatar.jpg" alt="eu sei lá"></li>
                                         <li><img src="assets/img/photo-perfil/006-daenerys-avatar.jpg" alt="eu sei lá"></li>
+                                    </ul>
                                 </div>
                                 <div class="input-dados-basicos config-container-input">
-                                    <p>Nome de usúario <br> <input type="text" name="" id="" placeholder="Nickname" maxlength="20"></p>
-                                    <p>E-mail <br> <input type="email" name="" id="" placeholder="E-mail"></p>
+                                    <p><label for="inputNicknameRegister">Nome de usúario</label> <br> <input type="text" id="inputNicknameRegister" placeholder="Nickname" maxlength="20"></p>
+                                    <p><label for="inputEmailRegister">E-mail</label> <br> <input type="email" id="inputEmailRegister" placeholder="E-mail"></p>
                                 </div>
                             </div>
                             <div class="input-dados-pessoais config-container-input">
-                                <p>Nome <br> <input type="text" name="" id=""></p>
-                                <p>Sobrenome <br> <input type="text"></p>
-                                <p>CPF <br> <input type="text"></p>
-                                <p>Data de Nascimento <br> <input type="date" name="" id=""></p>
+                                <p><label for="inputNomeRegister">Nome Completo</label> <br> <input type="text" id="inputNomeRegister" placeholder="Nome Completo"></p>
+                                <p><label for="inputCpfRegister">CPF</label> <br> <input type="text" id="inputCpfRegister" placeholder="CPF"></p>
+                                <p><label for="inputDtnRegister">Data de Nascimento</label> <br> <input type="date" id="inputDtnRegister"></p>
                             </div>
                             <div class="plano-assinatura">
-                                <h3>Escolha um plano abaixo para continuar</h3>
+                                <h3>*Escolha um plano abaixo para continuar</h3>
                                 <table>  
                                     <thead>
                                         <tr>
                                             <th></th>
-                                            <th> <input type="radio" name="inputPlano" id="pIndividual"> <label for="pIndividual">Individual</label></th>
+                                            <th> <input type="radio" name="inputPlano" id="pIndividual" checked> <label for="pIndividual">Individual</label></th>
                                             <th> <input type="radio" name="inputPlano" id="pCombo"> <label for="pCombo">Combo</label></th>
                                             <th> <input type="radio" name="inputPlano" id="pFamilia"> <label for="pFamilia">Família</label></th>
                                         </tr>
@@ -104,6 +104,18 @@
                                             <td>✔</td>
                                         </tr>
                                         <tr>
+                                            <th>Conteúdo exclusivo</th>
+                                            <td>✘</td>
+                                            <td>✔</td>
+                                            <td>✔</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Envio de Mídia</th>
+                                            <td>✘</td>
+                                            <td>✘</td>
+                                            <td>✔</td>
+                                        </tr>
+                                        <tr>
                                             <th>7 dias grátis</th>
                                             <td>✔</td>
                                             <td>✔</td>
@@ -118,13 +130,94 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <div class="button-register-part1">
+                                <p>Avançar</p>
+                            </div>
                         </form>
                     </div>
                 </div>
+                <div class="titles-register">
+                    <p>*Ficha cadastral para assinatura de serviço streaming</p>
+                    <h2>Binary Star</h2>
+                </div>
             </div>
+        </div>
+
+        <div class="window-elements-register-pt2" style="display: none;">
+            <div class="section-card">
+                <div class="card-pay">
+                    <div class="border-card"></div>
+                    <div class="icon-card-pay" style="display: none;">
+                        <div class="card-pay-head">
+                           <div></div>
+                        </div>
+                        <div class="card-pay-body">
+                             <output>5000 0049 0204 0003</output>
+                        </div>
+                        <div class="card-pay-footer">
+                            <div>
+                                <output id="dataValidade">04/27</output>
+                                <br>
+                                <output>Nome do Titular do Cartão</output>
+                            </div>
+                            <div class="center-grid bg-card-bandeira">
+                                Bandeira
+                            </div>
+                        </div>
+                    </div>
+                    <div class="icon-card-pay card-back">
+                        <div></div>
+                        <div>829</div>
+                    </div>
+                    <div class="border-card"></div>
+                </div>
+            </div>
+            <div class="section-input-card" style="display: none;">
+                <div class="input-card1 input-card" >
+                    <p>Nome do Titular no cartão<br> <input type="text" placeholder="Nome do Titular"></p>
+                    <p>Número do cartão <br> <input type="text" placeholder="Número"></p>
+                    <p>Validade do cartão <br><input type="text" placeholder="Validade"></p>
+                </div>
+                <button>Avançar</button>
+            </div>
+            <div class="section-input-card">
+                <div class="input-card">
+                    <p>CVC <br> <input type="text" placeholder="CVC"></p>
+                </div>
+                <button>Finalizar</button>
+            </div>
+        </div>
+
+        <div class="window-confirm-register">
+            
+            <div class="confirm-register-code">
+                <div class="head-verification-code">
+                    <div class="icon-verification-code"></div>
+                    <div>Verificação e Validação</div>
+                </div>
+                <div class="body-verification-code">
+                    <div>
+                        <p>*Foi enviado um código de verificação para seu E-mail, insira esse código abaixo.</p>
+                        <p>*Foi feito uma compra num valor entre 0,01 a 10,00 reais em seu cartão de credito, abra o APP do seu banco e confirme o valor abaixo.</p>
+                        <p>*Não se preocupe, a compra será cancelada logo após a validação do cartão de crédito.</p>
+                    </div>
+                    <div class="confirm-input-code">
+                           <p>Código de Verificação <br> <input type="text"></p>
+                           <p>Código de Validação <br> <input type="text"></p>
+                    </div>
+                </div>
+                <div class="footer-verefication-code"><button>Confirmar</button></div>
+            </div>
+
+            <div class="confirm-register-denied">
+
+            </div>
+
+            <div class="confirm-register-approved">
+
+            </div>
+        </div>
     </div>
-
-
     <script src="assets/js/login-script.js"></script>
 </body>
 </html>
