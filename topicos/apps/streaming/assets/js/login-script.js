@@ -15,11 +15,3 @@ function buttonLogin(){
         menssagem.textContent = ""
     }
 }
-
-
-
-
-
-
-//Adição de Avatar
-
