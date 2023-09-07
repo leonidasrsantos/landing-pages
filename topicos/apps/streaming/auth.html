@@ -188,9 +188,9 @@
             </div>
         </div>
 
-        <div class="window-confirm-register">
+        <div class="window-confirm-register" style="display:none;">
             
-            <div class="confirm-register-code">
+            <div class="confirm-register-code" style="display: none;">
                 <div class="head-verification-code">
                     <div class="icon-verification-code"></div>
                     <div>Verificação e Validação</div>
@@ -202,22 +202,85 @@
                         <p>*Não se preocupe, a compra será cancelada logo após a validação do cartão de crédito.</p>
                     </div>
                     <div class="confirm-input-code">
-                           <p>Código de Verificação <br> <input type="text"></p>
-                           <p>Código de Validação <br> <input type="text"></p>
+                           <p>Código de Verificação (E-mail) <br> <input type="text"></p>
+                           <p>Código de Validação (Banco) <br> <input type="text"></p>
                     </div>
                 </div>
                 <div class="footer-verefication-code"><button>Confirmar</button></div>
-            </div>
-
-            <div class="confirm-register-denied">
-
+                
+                <div class="notificacao-verification-code" style="display: none;">
+                    <div class="notificacao-li">
+                        <div class="icon-banco-notif icon-card"></div>
+                        <div>
+                            <div class="notificacao-head">
+                                <h2>Compra aprovada!</h2>
+                                <div class="notificacao-button-close"></div>
+                            </div>
+                            <div class="notificacao-body">
+                                <p>Uma compra foi feita no valor de R$10,00.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notificacao-li">
+                        <div class="icon-banco-notif icon-email"></div>
+                        <div>
+                            <div class="notificacao-head">
+                                <h2>Email received from BIS</h2>
+                                <div class="notificacao-button-close"></div>
+                            </div>
+                            <div class="notificacao-body">
+                                <p>BIS+: Your code is 209871.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="confirm-register-approved">
-
+                <div>
+                    <h2>Conta criada com sucesso</h2>
+                </div>
+                <div class="body-approved-register">
+                    <p>Sua conta foi criada e seu plano já está ativo, acesse o BIS+ <span class="button">clicando aqui.</span></p>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="body-tela-series">
+        <div class="container-menu">
+            <div class="menu-header content">
+                <div class="icon-acess-profile">Leonidas Santosss</div>
+                <div>
+                    <ul class="content">
+                        <li>Social</li>
+                        <li>Mensagens</li>
+                    </ul>
+                </div>
+                <div class="centraliza">
+                    <input type="search" name="" id="pesquisaGlobal" placeholder="Pesquisar">
+                </div>
+            </div>
+
+            <div class="menu-body">
+                <ul>
+                    <li>Filmes</li>
+                    <li>Series</li>
+                    <li>Músicas</li>
+                    <li>E-Book</li>
+                </ul>
+            </div>
+
+            <div class="menu-footer">
+                <p>Suporte</p>
+                <p>Versão 0.0.1</p>
+            </div>
+        </div>
+        <div class="container-content">
+            
+        </div>
+    </div>
+
     <script src="assets/js/login-script.js"></script>
 </body>
 </html>

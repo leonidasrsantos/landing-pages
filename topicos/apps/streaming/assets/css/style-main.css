@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+
+
+:root{
+    --bg-dark-color1:#090909;
+}
+
+.content{
+    display: flex;
+    gap: 2rem;
+}
+
+
+.body-tela-series{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.body-tela-series li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.container-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(193, 193, 193);
+    width: 100%;
+    height: 100vh;
+    background:var(--bg-dark-color1);
+    padding: 1rem;
+   
+
+}
+
+.container-content{
+    width: 100%;
+    height: 100vh;
+    background-color: brown;
+}
+
+.menu-header{
+    flex-direction: column; 
+    padding-bottom: 2rem;
+}
+
+.menu-header ul{
+    justify-content: space-evenly;
+    gap: 0;
+}
+
+.menu-header li{
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.menu-header li:first-child::before{
+    display: block;
+    content: '';
+    margin: auto;
+    background:url("../img/icons-main/icon-social-azul.png") no-repeat;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.menu-header li:last-child::before{
+    display: block;
+    content: '';
+    margin: auto;
+    background: url("../img/icons-main/icon-mensagem-azul.png") no-repeat;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.icon-acess-profile{
+    display: flex;
+    align-items: end;
+    gap: 0.5rem;
+}
+.icon-acess-profile::before{
+    content:'';
+    display: inline-block;
+    width: 6.4rem;
+    height: 6.4rem;
+    background: url(../img/photo-perfil/001-darwin-avatar.jpg) center center;
+    background-size: contain;
+    border-radius: 50%;
+
+}
+
+#pesquisaGlobal{
+    color: white;
+    background: none;
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.1rem solid blue;
+    width: 100%;
+    padding: 0rem 1rem;
+}
+
+#pesquisaGlobal::placeholder{
+    text-align: center;
+}
+
+#pesquisaGlobal:focus{
+    outline: none;
+    text-align: left;
+    background: #101010;
+}
