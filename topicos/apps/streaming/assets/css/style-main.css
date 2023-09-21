@@ -3,7 +3,9 @@
 
 
 :root{
-    --bg-dark-color1:#090909;
+    --bg-dark-color1:#000000;
+    --bg-dark-dgd-1: ;
+    --bg-dark-hover: #101010;
 }
 
 .content{
@@ -14,9 +16,10 @@
 
 .body-tela-series{
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: grid;
     grid-template-columns: 0.2fr 1fr;
+    overflow: hidden;
 }
 
 .body-tela-series li:hover{
@@ -33,14 +36,15 @@
     height: 100vh;
     background:var(--bg-dark-color1);
     padding: 1rem;
-   
+    overflow-y: auto;
 
 }
 
 .container-content{
+    overflow-y: auto;
     width: 100%;
     height: 100vh;
-    background-color: brown;
+    background: linear-gradient(145deg,#000006,#00002b,#00004a);
 }
 
 .menu-header{
@@ -57,13 +61,17 @@
     text-align: center;
     width: 100%;
     padding: 1rem;
+    border-radius: 1rem;
 }
 
+.menu-header li:hover{
+    background-color: var(--bg-dark-hover);
+}
 .menu-header li:first-child::before{
     display: block;
     content: '';
     margin: auto;
-    background:url("../img/icons-main/icon-social-azul.png") no-repeat;
+    background:url("../img/icons-main/nav-menu/icon-social-azul.png") no-repeat;
     width: 2.4rem;
     height: 2.4rem;
 }
@@ -72,7 +80,7 @@
     display: block;
     content: '';
     margin: auto;
-    background: url("../img/icons-main/icon-mensagem-azul.png") no-repeat;
+    background: url("../img/icons-main/nav-menu/icon-mensagem-azul.png") no-repeat;
     width: 2.4rem;
     height: 2.4rem;
 }
@@ -87,7 +95,7 @@
     display: inline-block;
     width: 6.4rem;
     height: 6.4rem;
-    background: url(../img/photo-perfil/001-darwin-avatar.jpg) center center;
+    background: url("../img/photo-perfil/001-darwin-avatar.jpg") center center;
     background-size: contain;
     border-radius: 50%;
 
@@ -97,7 +105,7 @@
     color: white;
     background: none;
     border: none;
-    border-radius: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
     border-bottom: 0.1rem solid blue;
     width: 100%;
     padding: 0rem 1rem;
@@ -112,3 +120,80 @@
     text-align: left;
     background: #101010;
 }
+
+#pesquisaGlobal:hover{
+    background-color: var(--bg-dark-hover);
+}
+
+.menu-body{
+    font-size: 2rem;
+    padding-bottom: 10rem;
+}
+
+.menu-body li{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 2rem;
+}
+
+.menu-body li:hover{
+    background-color: var(--bg-dark-hover);
+}
+
+.menu-body li::before{
+    content: '';
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.menu-body li:nth-child(1)::before{
+    background: url("../img/icons-main/nav-menu/icon-filme-vermelho.png");
+}
+
+.menu-body li:nth-child(2)::before{
+    background: url("../img/icons-main/nav-menu/icon-series-vermelho.png");
+}
+
+.menu-body li:nth-child(3)::before{  
+    background: url("../img/icons-main/nav-menu/icon-musica-vermelho.png");
+}
+
+.menu-body li:nth-child(4)::before{
+    background: url("../img/icons-main/nav-menu/icon-livro-vermelho.png");
+}
+
+
+.section-intro-all{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+.banners-principal{
+    overflow: hidden;
+    max-height: calc(100vh/2);
+}
+
+#banner-cont01{
+    display: inline-block;
+    background: url("../img/banners-films/banner-dc.jpg") center center no-repeat;
+    background-size: cover;
+    height: calc(100vh/2);
+    width: 100%;
+}
+
+#banner-cont02{
+    display: inline-block;
+    background: url("../img/banners-films/banner-dc.jpg") center center no-repeat;
+    background-size: cover;
+    height: calc(100vh/2);
+    width: 100%;
+}
+
+
