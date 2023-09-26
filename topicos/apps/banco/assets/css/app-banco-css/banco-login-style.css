@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+:root{
+    --footer-login-color:#00966c;
+}
+
+.app-banco-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.banco-login-body {
+    height: 100%;
+    background-color: white;
+
+}
+
+.banco-login-logo {
+    display: grid;
+    place-items: center;
+}
+
+.banco-login-logo h2 {
+    font-size: 4rem;
+    margin: 3rem;
+    font-family: var(--font-logotype);
+    color: var(--primary-color);
+    text-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.712);
+}
+
+.banco-login-form input {
+    border: 0.1rem solid gainsboro;
+    height: 4rem;
+    width: 25rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+#inpCPF{
+    text-transform: uppercase;
+}
+.banco-login-buttons {
+    display: grid;
+    place-items: center;
+}
+
+.banco-login-button-acess{
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--button-color-001);
+    height: 4rem;
+    width: 8rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.banco-login-button-acess:hover , .banco-login-button-acess:active{
+    background-color: var(--button-color-hover-001);
+}
+
+.banco-login-passoword-reset{
+    color:red;
+    text-decoration: underline;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.banco-login-footer{
+    text-align: center;
+    font-size: 1.3rem;
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--footer-login-color);
+}
