@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
-@import url("app-banco-css/banco-login-style.css");
+@import url("app-banco-css/banco-global.css");
 
 :root{
     --font-logotype:'Gugi', cursive;;
@@ -18,6 +18,7 @@
     box-sizing: border-box;
     user-select: none;
     font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
 }
 
 html{
