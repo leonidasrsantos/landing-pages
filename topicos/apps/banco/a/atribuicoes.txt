@@ -7,3 +7,19 @@ Icon-Bandeira-EUA > <a href="https://www.flaticon.com/br/icones-gratis/estados-u
 Icon-Moeda-virtual > <a href="https://www.flaticon.com/br/icones-gratis/moeda-virtual" title="moeda virtual ícones">Moeda virtual ícones criados por gravisio - Flaticon</a>
 
 Icon-Emprestimo > <a href="https://www.flaticon.com/br/icones-gratis/emprestimo" title="empréstimo ícones">Empréstimo ícones criados por ultimatearm - Flaticon</a>
+
+Icon-carro-debito > <a href="https://www.flaticon.com/br/icones-gratis/negocios-e-financas" title="negócios e finanças ícones">Negócios e finanças ícones criados por surang - Flaticon</a>
+
+icon-investimento > <a href="https://www.flaticon.com/br/icones-gratis/investimento" title="investimento ícones">Investimento ícones criados por Freepik - Flaticon</a>
+
+Icon-score > <a href="https://www.flaticon.com/br/icones-gratis/rapidez" title="rapidez ícones">Rapidez ícones criados por Freepik - Flaticon</a>
+
+Icon-cpf-limpo > <a href="https://www.flaticon.com/br/icones-gratis/limpar-limpo" title="limpar \ limpo ícones">Limpar \ limpo ícones criados por Freepik - Flaticon</a>
+
+icon-financiamento-housecar > <a href="https://www.flaticon.com/br/icones-gratis/precisao" title="precisão ícones">Precisão ícones criados por surang - Flaticon</a>
+
+icon-perfil-photo > <a href="https://www.flaticon.com/br/icones-gratis/do-utilizador" title="do utilizador ícones">Do utilizador ícones criados por Freepik - Flaticon</a>
+
+icon-carteira-saldo > <a href="https://www.flaticon.com/br/icones-gratis/carteira" title="carteira ícones">Carteira ícones criados por Kiranshastry - Flaticon</a>
+
+icon-botao-home > <a href="https://www.flaticon.com/br/icones-gratis/botao-home" title="botão home ícones">Botão home ícones criados por Kiranshastry - Flaticon</a>

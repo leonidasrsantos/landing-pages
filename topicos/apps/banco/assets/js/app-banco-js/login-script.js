@@ -87,3 +87,7 @@ function carregarVariaveis() {
      transferencias = window.document.querySelector (`#${idOn} #transferencias`)
      recebimentos = window.document.querySelector (`#${idOn} #recebimentos`)
 }
+
+
+//Manipulação do SCROLL da div de Saldos (.Scroll-x)
+
